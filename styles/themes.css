@@ -8,51 +8,49 @@
 :root.theme-dark {
   --prim-color: var(--green-color);
   --sec-color: var(--dark-color);
-  --grad-color: #00cc14;
+  --grad-color: var(--grad-color-dark);
   --gradinet-color-main:  var(--dark-color);
-  --gradinet-color-accent-light: #007f0c;
-  --gradinet-color-accent-dark: #004306;
+  --gradinet-color-accent-light: var(--gradinet-dark-color-accent-light);
+  --gradinet-color-accent-dark: var(--gradinet-dark-color-accent-dark);
   --button-color: var(--green-color);
-  --text-weight: 465;
-  --title-weight: 785;
+  --text-weight: var(--text-weight-dark);
+  --title-weight: var(--title-weight-dark);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --prim-color: var(--green-color);
     --sec-color: var(--dark-color);
-    --grad-color: #00cc14;
     --gradinet-color-main:  var(--dark-color);
-    --gradinet-color-accent-light: #007f0c;
-    --gradinet-color-accent-dark: #004306;
+    --gradinet-color-accent-light: var(--gradinet-dark-color-accent-light);
+    --gradinet-color-accent-dark: var(--gradinet-dark-color-accent-dark);
     --button-color: var(--green-color);
-    --text-weight: 465;
-    --title-weight: 785;
+    --text-weight: var(--text-weight-dark);
+    --title-weight: var(--title-weight-dark);
   }
 }
 
 :root.theme-light {
   --prim-color: var(--dark-color);
   --sec-color: var(--light-color);
-  --grad-color: #d3d3d3;
   --gradinet-color-main: #d3d3d3;
   --gradinet-color-accent-light: #e7e7e7;
   --gradinet-color-accent-dark: #1a1a1a;
   --button-color: var(--light-color);
-  --text-weight: 400;
-  --title-weight: 700;
+  --text-weight: var(--text-weight-light);
+  --title-weight: var(--title-weight-light);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --prim-color: var(--dark-color);
     --sec-color: var(--light-color);
-    --grad-color: #d3d3d3;
-    --gradinet-color-main: #d3d3d3;
-    --gradinet-color-accent-light: #e7e7e7;
-    --gradinet-color-accent-dark: #1a1a1a;
+    --grad-color: var(--grad-color-light);
+    --gradinet-color-main: var(--gradinet-light-color-main);
+    --gradinet-color-accent-light: var(--gradinet-light-color-accent-light);
+    --gradinet-color-accent-dark: var(--gradinet-light-color-accent-dark);
     --button-color: var(--light-color);
-    --text-weight: 400;
-    --title-weight: 700;
+    --text-weight: var(--text-weight-light);
+    --title-weight: var(--title-weight-light);
 }
 }

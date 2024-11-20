@@ -16,7 +16,7 @@
 .page {
   min-block-size: 100rem;
   max-block-size: 75rem;
-  font-family: var(--font-start);
+  font-family: var(--font-main), 'Fantasy', 'Times New Roman', Times, serif;
   font-variation-settings: "wght" var(--text-weight);
   line-height: 1.3125rem;
   background: repeating-linear-gradient(
@@ -51,6 +51,7 @@
   display: block;
   margin-block-end: 1.25rem;
   padding-block-start: 8.5rem;
+
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -62,6 +63,7 @@
 
 .header__title {
   margin-block-end: 1.5625rem;
+  color: var(--prim-color);
   font-size: var(--line-subt-clamp);
   font-weight: var(--pressstart-weight);
   line-height: var(--line-subt-clamp);
@@ -94,7 +96,7 @@
   position: relative;
   transition: opacity 0.3s ease;
   cursor: pointer;
-  font-family: var(--font-start);
+  font-family: var(--font-main);
 }
 
 .theme-menu__button:hover {
@@ -153,7 +155,7 @@
 }
 
 .card__title {
-  font-family: var(--font-inter);
+  font-family: var(--font-second);
   color: var(--prim-color);
   font-variation-settings: 'wght' var(--title-weight);
   border-bottom: 0.125rem solid var(--prim-color);
@@ -179,6 +181,7 @@
   top: 25px;
   right: 25px;
   font-weight: var(--text-weight);
+  font-size: var(--button-font-size);
   color: var(--prim-color);
   opacity: 0.5;
   mix-blend-mode: hard-light;
@@ -188,6 +191,7 @@
   (text-stroke: 0.063rem var(--sec-color)) {
   .img__fig {
     -webkit-text-stroke: 0.063rem var(--sec-color);
+    text-stroke: 1px var(--sec-color);
     text-shadow: none;
   }
 }
@@ -226,7 +230,7 @@
   padding: 1.5625rem;
   border-block-start: 0.125rem solid var(--prim-color);
   color: var(--prim-color);
-  font-family: var(--font-inter);
+  font-family: var(--font-second), sans-serif, 'Times New Roman', Times, serif;
   font-size: var(--text-font-size);
 }
 
@@ -347,6 +351,12 @@
   z-index: 1;
 }
 
+.footer-alike {
+  display: block;
+  color: transparent;
+  height: 1px;
+}
+
 /*dialog dialog dialog dialog dialog dialog dialog */
 
 .dialog[open] {
@@ -354,7 +364,7 @@
   background: var(--sec-color);
   color: var(--prim-color);
   padding: 1.875rem;
-  font-family: var(--font-start);
+  font-family: var(--font-main), 'Fantasy', 'Times New Roman', Times, serif;
   font-weight: 400;
   font-size: var(--button-font-size);
   line-height: 1.313rem;
@@ -408,12 +418,14 @@
 }
 
 @media (max-width: 375px) {
-  .logo-link {
+  .logo__link {
     padding-block-start: 7.5rem;
   }
 
   .img__fig {
-    inset-inline-end: .6875rem;
+    top: 20px;
+    right: 10px;
+
   }
 
   .button-save {
