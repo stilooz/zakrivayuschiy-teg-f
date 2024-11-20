@@ -2,5 +2,57 @@
 Придерживайтесь такого именования классов:
 ✦ theme-dark — класс тёмной темы
 ✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
+✦ не забудьте   описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+  --prim-color: var(--green-color);
+  --sec-color: var(--dark-color);
+  --grad-color: #00cc14;
+  --gradinet-color-main:  var(--dark-color);
+  --gradinet-color-accent-light: #007f0c;
+  --gradinet-color-accent-dark: #004306;
+  --button-color: var(--green-color);
+  --text-weight: 465;
+  --title-weight: 785;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --prim-color: var(--green-color);
+    --sec-color: var(--dark-color);
+    --grad-color: #00cc14;
+    --gradinet-color-main:  var(--dark-color);
+    --gradinet-color-accent-light: #007f0c;
+    --gradinet-color-accent-dark: #004306;
+    --button-color: var(--green-color);
+    --text-weight: 465;
+    --title-weight: 785;
+  }
+}
+
+:root.theme-light {
+  --prim-color: var(--dark-color);
+  --sec-color: var(--light-color);
+  --grad-color: #d3d3d3;
+  --gradinet-color-main: #d3d3d3;
+  --gradinet-color-accent-light: #e7e7e7;
+  --gradinet-color-accent-dark: #1a1a1a;
+  --button-color: var(--light-color);
+  --text-weight: 400;
+  --title-weight: 700;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --prim-color: var(--dark-color);
+    --sec-color: var(--light-color);
+    --grad-color: #d3d3d3;
+    --gradinet-color-main: #d3d3d3;
+    --gradinet-color-accent-light: #e7e7e7;
+    --gradinet-color-accent-dark: #1a1a1a;
+    --button-color: var(--light-color);
+    --text-weight: 400;
+    --title-weight: 700;
+}
+}

@@ -1,1 +1,21 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-inter: Inter;
+  --font-start: PressStart2p;
+  --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --main-title-font-size: clamp(0.875rem, 0.677rem + 0.85vw, 1.438rem);
+  --line-hght-clamp: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --line-subt-clamp: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --text-weight: 400;
+  --title-weight: 700;
+  --text-font-size: 18px;
+  --button-font-size: 14px;
+
+
+  --heart-red: #FF0000;
+  --green-color: #00cc14;
+  --dark-color: #000000;
+  --light-color: #fff;
+
+
+}
