@@ -175,7 +175,7 @@
 }
 
 @supports (-webkit-text-stroke: 1px var(--sec-color)) or (text-stroke: 1px var(--sec-color)) {
-  .card__label {
+  .img__fig {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--sec-color);
     text-stroke: 1px var(--sec-color);
