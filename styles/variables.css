@@ -17,7 +17,7 @@
   --gradinet-color-accent-dark: #004306;
   --gradinet-color-accent-light: #e7e7e7;
   --gradinet-color-accent-dark: #1a1a1a;
-  --heart-red: #FF0000;
+  --heart-red: #ff0000;
   --green-color: #00cc14;
   --dark-color: #000000;
   --light-color: #fff;
@@ -26,4 +26,21 @@
   --gradinet-light-color-accent-dark: #1a1a1a;
   --gradinet-dark-color-accent-light: #007f0c;
   --gradinet-dark-color-accent-dark: #004306;
+
+  --background-gradient: repeating-linear-gradient(
+      to right,
+      var(--gradinet-color-main) 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--gradinet-color-main) 0px 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--gradinet-color-accent-light),
+      var(--gradinet-color-accent-light) 0.01%,
+      var(--gradinet-color-accent-dark) 100%
+    );
 }

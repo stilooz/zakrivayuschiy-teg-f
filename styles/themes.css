@@ -15,6 +15,21 @@
   --button-color: var(--green-color);
   --text-weight: var(--text-weight-dark);
   --title-weight: var(--title-weight-dark);
+  --background-gradient: repeating-linear-gradient(
+    to right,
+    var(--gradinet-color-main) 0px 2px,
+    transparent 2px 4px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    var(--gradinet-color-main) 0px 2px,
+    transparent 2px 4px
+  ),
+  linear-gradient(
+    to bottom,
+    var(--gradinet-color-accent-light),
+    var(--gradinet-color-accent-dark)
+  );
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,6 +42,21 @@
     --button-color: var(--green-color);
     --text-weight: var(--text-weight-dark);
     --title-weight: var(--title-weight-dark);
+    --background-gradient: repeating-linear-gradient(
+      to right,
+      var(--gradinet-color-main) 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--gradinet-color-main) 0px 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--gradinet-color-accent-light),
+      var(--gradinet-color-accent-dark)
+    );
   }
 }
 
@@ -39,6 +69,22 @@
   --button-color: var(--light-color);
   --text-weight: var(--text-weight-light);
   --title-weight: var(--title-weight-light);
+  --background-gradient: repeating-linear-gradient(
+    to right,
+    var(--gradinet-color-main) 0px 2px,
+    transparent 2px 4px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    var(--gradinet-color-main) 0px 2px,
+    transparent 2px 4px
+  ),
+  linear-gradient(
+    to bottom,
+    var(--gradinet-color-accent-light),
+    var(--gradinet-color-accent-light) 0.01%,
+    var(--gradinet-color-accent-dark) 100%
+  );
 }
 
 @media (prefers-color-scheme: light) {
@@ -52,5 +98,21 @@
     --button-color: var(--light-color);
     --text-weight: var(--text-weight-light);
     --title-weight: var(--title-weight-light);
+    --background-gradient: repeating-linear-gradient(
+      to right,
+      var(--gradinet-color-main) 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--gradinet-color-main) 0px 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--gradinet-color-accent-light),
+      var(--gradinet-color-accent-light) 0.01%,
+      var(--gradinet-color-accent-dark) 100%
+    );
 }
 }

@@ -16,24 +16,10 @@
 .page {
   min-block-size: 100rem;
   max-block-size: 75rem;
-  font-family: var(--font-main), 'Fantasy', 'Times New Roman', Times, serif;
+  font-family: var(--font-main), "Fantasy", "Times New Roman", Times, serif;
   font-variation-settings: "wght" var(--text-weight);
   line-height: 1.3125rem;
-  background: repeating-linear-gradient(
-      to right,
-      var(--gradinet-color-main) 0px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      var(--gradinet-color-main) 0px,
-      transparent 2px 4px
-    ),
-    linear-gradient(
-      to bottom,
-      var(--gradinet-color-accent-light),
-      var(--gradinet-color-accent-dark)
-    );
+  background-image: var(--background-gradient);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -157,7 +143,7 @@
 .card__title {
   font-family: var(--font-second);
   color: var(--prim-color);
-  font-variation-settings: 'wght' var(--title-weight);
+  font-variation-settings: "wght" var(--title-weight);
   border-bottom: 0.125rem solid var(--prim-color);
   font-size: var(--text-font-size);
   padding: 0.3125rem 0.625rem;
@@ -185,13 +171,13 @@
   color: var(--prim-color);
   opacity: 0.5;
   mix-blend-mode: hard-light;
+  text-shadow: 1px 1px var(--sec-color);
 }
 
-@supports (-webkit-text-stroke: 1px var(--sec-color)) or
-  (text-stroke: 0.063rem var(--sec-color)) {
+@supports
+    (-webkit-text-stroke: 0.063rem var(--sec-color)) {
   .img__fig {
     -webkit-text-stroke: 0.063rem var(--sec-color);
-    text-stroke: 1px var(--sec-color);
     text-shadow: none;
   }
 }
@@ -230,7 +216,7 @@
   padding: 1.5625rem;
   border-block-start: 0.125rem solid var(--prim-color);
   color: var(--prim-color);
-  font-family: var(--font-second), sans-serif, 'Times New Roman', Times, serif;
+  font-family: var(--font-second), sans-serif, "Times New Roman", Times, serif;
   font-size: var(--text-font-size);
 }
 
@@ -254,7 +240,7 @@
   inline-size: 2.6875rem;
   block-size: 2.375rem;
   cursor: pointer;
-  transition: border 0.3s ease
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -282,7 +268,7 @@
 
 .button__content:focus {
   outline: none;
-  box-shadow: 0.125rem 0.125rem 0 0 var(--accent-color);  
+  box-shadow: 0.125rem 0.125rem 0 0 var(--accent-color);
 }
 
 .button__content:focus-visible {
@@ -364,7 +350,7 @@
   background: var(--sec-color);
   color: var(--prim-color);
   padding: 1.875rem;
-  font-family: var(--font-main), 'Fantasy', 'Times New Roman', Times, serif;
+  font-family: var(--font-main), "Fantasy", "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: var(--button-font-size);
   line-height: 1.313rem;
@@ -425,11 +411,10 @@
   .img__fig {
     top: 20px;
     right: 10px;
-
   }
 
   .button-save {
-    padding: .9375rem 1.25rem;
+    padding: 0.9375rem 1.25rem;
     inline-size: 19.375rem;
   }
 
