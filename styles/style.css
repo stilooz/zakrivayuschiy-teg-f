@@ -174,11 +174,11 @@
   text-shadow: 1px 1px var(--sec-color);
 }
 
-@supports
-    (-webkit-text-stroke: 0.063rem var(--sec-color)) {
-  .img__fig {
-    -webkit-text-stroke: 0.063rem var(--sec-color);
+@supports (-webkit-text-stroke: 1px var(--sec-color)) or (text-stroke: 1px var(--sec-color)) {
+  .card__label {
     text-shadow: none;
+    -webkit-text-stroke: 1px var(--sec-color);
+    text-stroke: 1px var(--sec-color);
   }
 }
 
